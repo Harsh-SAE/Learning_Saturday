@@ -13,8 +13,7 @@ void timer_expire(void)
     printf("You have successfully entered on after timer expiry action \n");
 }
 
-int main()
+void main()
 {
     start_timer(timer_expire);
-    return 0;
 }
