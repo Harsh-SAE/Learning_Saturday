@@ -1,0 +1,20 @@
+#include<stdio.h>
+typedef void (*timer_callback)(void);
+
+void start_timer(timer_callback cb)
+{
+    printf("Timer started ..\n");
+    printf("Timer stopped ..\n");
+    cb();
+}
+
+void timer_expire(void)
+{
+    printf("You have successfully entered on after timer expiry action \n");
+}
+
+int main()
+{
+    start_timer(timer_expire);
+    return 0;
+}
