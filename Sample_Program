@@ -5,7 +5,7 @@ void start_timer(timer_callback cb)
 {
     printf("Timer started ..\n");
     printf("Timer stopped ..\n");
-    cb();
+    cb();//Harsh
 }
 
 void timer_expire(void)
